@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 275,
+  "experience": 1,
+  "group": "ruby",
+  "ingredient": {
+    "item": "test-mod:raw_ruby"
+  },
+  "result": "test-mod:ruby"
+}

@@ -1,5 +1,8 @@
 package com.kenzie.testmod;
 
+import com.kenzie.testmod.block.ModBlocks;
+import com.kenzie.testmod.item.ModItemGroups;
+import com.kenzie.testmod.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -12,7 +15,8 @@ public class TestMod implements ModInitializer {
 	@Override
 	public void onInitialize() {
 
-
-		LOGGER.info("Hello Fabric world!");
+		ModItemGroups.registerItemGroups();
+		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 	}
 }
